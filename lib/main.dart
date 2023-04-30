@@ -14,7 +14,33 @@ class Card extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                CircleAvatar(
+                  backgroundImage: AssetImage('assets/user.jpg'),
+                  radius: 40,
+                ),
+                Text(
+                  'Bashir Danish',
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.white,
+                    fontFamily: 'pacifico',
+                  ),
+                ),
+                Text(
+                  'MEVN & MERN DEV',
+                  style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.white,
+                      fontFamily: 'SpaceMono',
+                      letterSpacing: 2),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );
