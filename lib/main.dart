@@ -17,12 +17,12 @@ class Card extends StatelessWidget {
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                CircleAvatar(
+              children: [
+                const CircleAvatar(
                   backgroundImage: AssetImage('assets/user.jpg'),
-                  radius: 40,
+                  radius: 50,
                 ),
-                Text(
+                const Text(
                   'Bashir Danish',
                   style: TextStyle(
                     fontSize: 25,
@@ -30,7 +30,7 @@ class Card extends StatelessWidget {
                     fontFamily: 'pacifico',
                   ),
                 ),
-                Text(
+                const Text(
                   'MEVN & MERN DEV',
                   style: TextStyle(
                       fontSize: 12,
@@ -38,6 +38,42 @@ class Card extends StatelessWidget {
                       fontFamily: 'SpaceMono',
                       letterSpacing: 2),
                 ),
+                Container(
+                  color: Colors.white,
+                  padding: const EdgeInsets.all(5),
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 55),
+                  child: Row(
+                    children: const [
+                      Icon(
+                        Icons.phone,
+                        color: Colors.teal,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('+93798795435')
+                    ],
+                  ),
+                ),
+                Container(
+                  color: Colors.white,
+                  padding: const EdgeInsets.all(5),
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 55),
+                  child: Row(
+                    children: const [
+                      Icon(
+                        Icons.email,
+                        color: Colors.teal,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('dos@gmail.com')
+                    ],
+                  ),
+                )
               ],
             ),
           ),
